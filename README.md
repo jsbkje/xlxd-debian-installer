@@ -5,7 +5,7 @@ At the start of 2020 a new version of XLX was released that allows for native C4
 
 
 ### To Install:
-1. Have a fresh Debian 12 computer ready and up to date.
+1. Have a fresh Debian 9,10,11 or 12 computer ready and up to date.
 2. Have both a FQDN and 3 digit XLX number in mind before beginning.
 3. 
 ```sh
