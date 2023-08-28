@@ -22,10 +22,10 @@ XLXDREPO=https://github.com/jsbkje/xlxd.git
 DMRIDURL=http://xlxapi.rlx.lu/api/exportdmr.php
 WEBDIR=/var/www/xlxd
 XLXINSTDIR=/root/reflector-install-files/xlxd
-DEP="git build-essential apache2 php libapache2-mod-php php7.0-mbstring"
-DEP2="git build-essential apache2 php libapache2-mod-php php7.3-mbstring"
-DEP3="git build-essential apache2 php libapache2-mod-php php7.4-mbstring"
-DEP4="git build-essential apache2 php libapache2-mod-php" 
+DEP="git build-essential apache2 php libapache2-mod-php php7.0-mbstring curl"
+DEP2="git build-essential apache2 php libapache2-mod-php php7.3-mbstring curl"
+DEP3="git build-essential apache2 php libapache2-mod-php php7.4-mbstring curl"
+DEP4="git build-essential apache2 php libapache2-mod-php curl" 
 VERSION=$(sed 's/\..*//' /etc/debian_version)
 clear
 echo ""
