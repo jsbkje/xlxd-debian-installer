@@ -121,8 +121,16 @@ chown -R www-data:www-data /xlxd/
 a2ensite $XLXDOMAIN
 service xlxd start
 systemctl restart apache2
+echo "------------------------------------------------------------------------------"
+echo ""
+echo ""
+echo "***************Setup Repo and Install Webmin Control Panel********************"
+echo ""
+echo ""
 curl -o setup-repos.sh https://raw.githubusercontent.com/webmin/webmin/master/setup-repos.sh
 sh setup-repos.sh
+apt update
+apt install -y webmin 
 echo "------------------------------------------------------------------------------"
 echo ""
 echo ""
