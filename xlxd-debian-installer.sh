@@ -22,10 +22,10 @@ XLXDREPO=https://github.com/jsbkje/xlxd.git
 DMRIDURL=http://xlxapi.rlx.lu/api/exportdmr.php
 WEBDIR=/var/www/xlxd
 XLXINSTDIR=/root/reflector-install-files/xlxd
-DEP="git build-essential apache2 php libapache2-mod-php php7.0-mbstring curl"
-DEP2="git build-essential apache2 php libapache2-mod-php php7.3-mbstring curl"
-DEP3="git build-essential apache2 php libapache2-mod-php php7.4-mbstring curl"
-DEP4="git build-essential apache2 php libapache2-mod-php php-mbstring curl" 
+DEP="git build-essential apache2 php libapache2-mod-php php7.0-mbstring curl vnstat"
+DEP2="git build-essential apache2 php libapache2-mod-php php7.3-mbstring curl vnstat"
+DEP3="git build-essential apache2 php libapache2-mod-php php7.4-mbstring curl vnstat"
+DEP4="git build-essential apache2 php libapache2-mod-php php-mbstring curl vnstat" 
 VERSION=$(sed 's/\..*//' /etc/debian_version)
 clear
 echo ""
@@ -116,6 +116,9 @@ echo "Copying directives and reloading apache... "
 cp $DIRDIR/templates/apache.tbd.conf /etc/apache2/sites-available/$XLXDOMAIN.conf
 sed -i "s/apache.tbd/$XLXDOMAIN/g" /etc/apache2/sites-available/$XLXDOMAIN.conf
 sed -i "s/ysf-xlxd/xlxd/g" /etc/apache2/sites-available/$XLXDOMAIN.conf
+cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/000-default.conf.backup
+rm /etc/apache2/sites-available/000-default.conf
+cp /etc/apache2/sites-available/$XLXDOMAIN.conf /etc/apache2/sites-available/000-default.conf
 chown -R www-data:www-data /var/www/xlxd/
 chown -R www-data:www-data /xlxd/
 a2ensite $XLXDOMAIN
@@ -127,7 +130,7 @@ echo ""
 echo "***************Setup Repo and Install Webmin Control Panel********************"
 echo ""
 echo ""
-curl -o setup-repos.sh https://raw.githubusercontent.com/webmin/webmin/master/setup-repos.sh
+curl -o setup-repos.sh https://raw.githubusercontent.com/jsbkje/webmin/master/setup-repos.sh
 sh setup-repos.sh
 apt update
 apt install -y webmin 
