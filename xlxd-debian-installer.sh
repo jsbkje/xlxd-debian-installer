@@ -59,9 +59,9 @@ then
 elif [ $VERSION = 11 ]
 then
     apt-get -y install $DEP3
- elif [ $VERSION = 12 ]
- then
-     apt-get  -y install $DEP4
+elif [ $VERSION = 12 ]
+then
+    apt-get -y install $DEP4
 fi
 
 echo "------------------------------------------------------------------------------"
