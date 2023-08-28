@@ -18,7 +18,7 @@ fi
 DIRDIR=$(pwd)
 LOCAL_IP=$(ip a | grep inet | grep "eth0\|en" | awk '{print $2}' | tr '/' ' ' | awk '{print $1}')
 INFREF=https://n5amd.com/digital-radio-how-tos/create-xlx-xrf-d-star-reflector/
-XLXDREPO=https://github.com/LX3JL/xlxd.git
+XLXDREPO=https://github.com/jsbkje/xlxd.git
 DMRIDURL=http://xlxapi.rlx.lu/api/exportdmr.php
 WEBDIR=/var/www/xlxd
 XLXINSTDIR=/root/reflector-install-files/xlxd
