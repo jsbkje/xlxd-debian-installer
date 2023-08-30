@@ -138,10 +138,9 @@ echo "-----------------------------Glance prep----------------------------------
 apt install -y pipx
 pipx install 'glances[web]'
 python3 -m pipx install pySMART --include-deps
-cp $DIRDIR/glances /etc/init.d/glances
-chown root:root /etc/init.d/glances
-chmod 755 /etc/init.d/glances
-service glances start
+cp $DIRDIR/glances /etc/systemd/system/
+systemctl enable glances.service
+
 echo ""
 echo ""
 echo "******************************************************************************"
