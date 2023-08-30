@@ -137,6 +137,7 @@ apt install -y webmin
 echo "-----------------------------Glance prep------------------------------------------"
 apt install -y pipx
 pipx install 'glances[web]'
+pipx ensurepath
 python3 -m pipx install pySMART --include-deps
 cp $DIRDIR/glances /etc/systemd/system/glances.service
 systemctl enable glances.service
