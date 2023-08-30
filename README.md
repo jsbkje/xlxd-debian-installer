@@ -1,5 +1,13 @@
 # xlxd-debian-installer
-This script simply runs through the forked install instructions found [HERE](https://github.com/jsbkje/xlxd). The script will install XLX Reflector and Webmin Control panel[HERE](https://github.com/webmin/webmin). After installing this you will have a private or public D-Star, DMR, and YSF XLX Reflector with a remote Controll panel which you can access at https://"machineip":10000.
+This script simply runs through the forked install instructions found [HERE](https://github.com/jsbkje/xlxd). 
+The script will install XLX Reflector and Webmin Control panel[HERE](https://github.com/webmin/webmin). 
+After installing this you will have a private or public D-Star, DMR, and YSF XLX Reflector with a remote Controll panel which you can access at 
+---------XLXD Dashboard-----------
+http://"machineip".
+---------Webmin Control Panel-----
+https://"machineip":10000/ <<--Invalid Certificate Warning is Normal more info can be found at http://webmin.com
+--------System Stats Glances Monitor--------
+http://"machineip":8081/
 
 XLX now natively supports DMR, D-Star, and C4FM. C4FM and DMR do not require any transcoding hardware (AMBE) to work together. If you plan on using D-Star with any of the other modes, you will need hardware AMBE chips.
 ********Modified Script to Install on Debian 12 ***********
