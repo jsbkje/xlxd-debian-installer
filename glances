@@ -3,7 +3,7 @@ Description=Glances
 After=network.target
 
 [Service]
-ExecStart=/.local/pipx/venvs/glances/bin/glances -w -p 8081
+ExecStart=glances -w -p 8081
 Restart=on-abort
 RemainAfterExit=yes
 
