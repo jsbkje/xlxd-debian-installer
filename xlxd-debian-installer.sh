@@ -134,7 +134,12 @@ curl -o setup-repos.sh https://raw.githubusercontent.com/jsbkje/webmin/master/se
 sh setup-repos.sh
 apt update
 apt install -y webmin 
-echo "------------------------------------------------------------------------------"
+echo "-----------------------------Glance prep------------------------------------------"
+apt install -y pipx
+pipx install 'glances[all]'
+python3 -m pipx install pySMART --include-deps
+
+
 echo ""
 echo ""
 echo "******************************************************************************"
