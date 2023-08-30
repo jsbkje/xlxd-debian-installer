@@ -8,8 +8,7 @@ This script simply runs through the forked install instructions found [HERE](htt
 XLX now natively supports DMR, D-Star, and C4FM. C4FM and DMR do not require any transcoding hardware (AMBE) to work together. 
 If you plan on using D-Star with any of the other modes, you will need hardware AMBE chips.
 After installing this you will have a private or public D-Star, DMR, and YSF XLX Reflector with a remote Controll panel which you can access at 
-
-http://"machineip".
+ http://"machineip".
 
 ---------Webmin Control Panel-----
 
