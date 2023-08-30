@@ -136,7 +136,7 @@ apt update
 apt install -y webmin 
 echo "-----------------------------Glance prep------------------------------------------"
 apt install -y pipx
-pipx install 'glances[all]'
+pipx install 'glances[web]'
 python3 -m pipx install pySMART --include-deps
 
 
