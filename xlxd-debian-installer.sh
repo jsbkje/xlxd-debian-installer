@@ -138,8 +138,10 @@ echo "-----------------------------Glance prep----------------------------------
 apt install -y pipx
 pipx install 'glances[web]'
 python3 -m pipx install pySMART --include-deps
-
-
+cp $DIRDIR/glances /etc/init.d/glances
+chown root:root /etc/init.d/glances
+chmod 755 /etc/init.d/glances
+service glances start
 echo ""
 echo ""
 echo "******************************************************************************"
@@ -172,4 +174,4 @@ echo "You can make further customizations to the main config file $XLXCONFIG."
 echo "Be sure to thank the creators of xlxd for the ability to spin up          "
 echo "your very own D-Star reflector.                                           "
 echo ""
-echo "------------------------------------------------------------------------------"
+echo "------------------------Reboot System Now!------------------------------------------------------"
