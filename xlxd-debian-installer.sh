@@ -1,4 +1,4 @@
-#!/bin/bash
+s#!/bin/bash
 # A tool to install xlxd, your own D-Star Reflector.
 # For more information, please visit: https://n5amd.com
 #Lets begin-------------------------------------------------------------------------------------------------
@@ -138,7 +138,7 @@ echo "-----------------------------Glance prep----------------------------------
 apt install -y pipx
 pipx install 'glances[web]'
 python3 -m pipx install pySMART --include-deps
-cp $DIRDIR/glances /etc/systemd/system/
+cp $DIRDIR/glances /etc/systemd/system/glances.service
 systemctl enable glances.service
 
 echo ""
