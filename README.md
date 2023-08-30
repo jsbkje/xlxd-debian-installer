@@ -1,9 +1,7 @@
 # xlxd-debian-installer
 This Script is intended to be run on a fresh installed system and assumes you have set a password for root. Root access is required for installation.
-
-This script simply runs through the forked install instructions found [HERE](https://github.com/jsbkje/xlxd). 
-
----------XLXD Dashboard-----------
+ This script simply runs through the forked install instructions found [HERE](https://github.com/jsbkje/xlxd). 
+ ---------XLXD Dashboard-----------
 
 XLX now natively supports DMR, D-Star, and C4FM. C4FM and DMR do not require any transcoding hardware (AMBE) to work together. 
 If you plan on using D-Star with any of the other modes, you will need hardware AMBE chips.
