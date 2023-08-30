@@ -15,7 +15,7 @@ http://"machineip".
 
 The script will install XLX Reflector and Webmin Control panel[HERE](https://github.com/webmin/webmin). 
 
-https://"machineip":10000/ <<--Invalid Certificate Warning is Normal more info can be found at 
+https://"machineip":10000/         <<--Invalid Certificate Warning is Normal more info can be found at 
 
 http://webmin.com
 
