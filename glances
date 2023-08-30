@@ -10,7 +10,7 @@
 ### END INIT INFO
 
 dir="/"
-cmd="/usr/local/bin/glances -w -p 8081"
+cmd="/.local/pipx/venvs/glances/bin/glances -w -p 8081"
 user="root"
 
 name=`basename $0`
