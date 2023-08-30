@@ -3,7 +3,7 @@ Description=Glances
 After=network.target
 
 [Service]
-ExecStart=/root/.local/bin/glances -w -p 8081
+ExecStart=/root/.local/bin/glances -w -p 8081 --theme-white --hide-kernel-threads
 Restart=on-abort
 RemainAfterExit=yes
 
